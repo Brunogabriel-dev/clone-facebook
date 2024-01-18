@@ -28,8 +28,20 @@ const AuthProvider = ({ children }) => {
     localStorage.setItem("AuthFaceClone", JSON.stringify(data));
   };
 
+  function signOut() {
+    localStorage.removeItem("AuthFaceClone");
+
+    setUser(null);
+  }
+
+
   return (
     <AuthContext.Provider
+    value={{
+      signInWithFacebook,
+      signOut,
+      user,
+    }}
     >
       {children}
     </AuthContext.Provider>
