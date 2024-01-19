@@ -1,5 +1,6 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import GlobalStyles from './styles/global';
+import { AuthContext } from './contexts/auth';
 
 const App = () => {
   return (
