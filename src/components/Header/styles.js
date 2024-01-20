@@ -46,3 +46,21 @@ export const Section = styled.section`
     justify-content: flex-end;
   }
 `;
+
+export const DivSearch = styled.div`
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  padding: 5px 8px;
+  background-color: #f0f2f5;
+
+  svg {
+    width: 16px;
+    height: 16px;
+    color: #65676b;
+  }
+
+  @media (max-width: 350px) {
+    display: none;
+  }
+`
