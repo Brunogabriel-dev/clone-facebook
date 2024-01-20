@@ -63,4 +63,22 @@ export const DivSearch = styled.div`
   @media (max-width: 350px) {
     display: none;
   }
-`
+`;
+
+export const Input = styled.input`
+outline: none;
+border: none;
+background-color: transparent;
+width: 140px;
+margin: 0 10px;
+font-size: 11px;
+
+@media (max-width: 825px) {
+  display: none;
+}
+`;
+
+export const Div = styled.div`
+  display: flex;
+  align-items: center;
+`;
