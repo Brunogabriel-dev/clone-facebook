@@ -8,3 +8,12 @@ export const Container = styled.div`
  align-items: center;
  justify-content: center;
 `;
+
+export const Context = styled.div`
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ width: 100%;
+ padding: 0 10px;
+ gap: 5px;
+`;
