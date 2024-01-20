@@ -26,7 +26,8 @@ const Header = () => {
             <C.Input placeholder="Pesquisar no Facebook" />
           </C.DivSearch>
         </C.Section>
-        <C.Section className="section2"></C.Section>
+        <C.Section className="section2">
+        </C.Section>
         <C.Section className="section3"></C.Section>
       </C.Context>
     </C.Container>  
