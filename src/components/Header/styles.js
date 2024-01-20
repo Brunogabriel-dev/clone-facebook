@@ -82,3 +82,19 @@ export const Div = styled.div`
   display: flex;
   align-items: center;
 `;
+
+export const Label = styled.label`
+  font-size: 12px;
+  font-weight: 600;
+
+  @media (max-width: 680px) {
+    display: none;
+  }
+`;
+
+export const Image = styled.img`
+  border-radius: 50%;
+  margin-right: 110px;
+  cursor: pointer;
+
+`
