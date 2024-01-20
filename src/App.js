@@ -8,6 +8,7 @@ const App = () => {
 
   if (!user) return <Login />;
   
+  console.log(user);
   return (
     <>
     gfdhgfhdgf
