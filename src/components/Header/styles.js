@@ -22,4 +22,27 @@ export const Section = styled.section`
   display: flex;
   gap: 10px;
   width: 100%;
+
+  @media (max-width: 550px) {
+    gap: 3px;
+  }
+
+  > svg,
+  img {
+    width: 32px;
+    height: 32px;
+
+    @media (max-width: 350px) {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  &.section2 {
+    max-width: 470px;
+  }
+
+  &.section3 {
+    justify-content: flex-end;
+  }
 `;
