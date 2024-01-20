@@ -3,7 +3,7 @@ import { createContext, useEffect, useState } from "react";
 export const AuthContext = createContext({});
 
 const AuthProvider = ({ children }) => {
-  const {user, setUser} = useState(null);
+  const [user, setUser] = useState(null);
 
   useEffect(() => {
     function loadStorage() {
@@ -28,7 +28,7 @@ const AuthProvider = ({ children }) => {
     localStorage.setItem("AuthFaceClone", JSON.stringify(data));
   };
 
-  function signOut() {
+   function signOut() {
     localStorage.removeItem("AuthFaceClone");
 
     setUser(null);

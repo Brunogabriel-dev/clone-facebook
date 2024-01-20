@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import GlobalStyles from "./styles/global";
 import { AuthContext } from "./contexts/auth";
 import Login from "./components/login";
@@ -16,4 +16,4 @@ const App = () => {
   );
 };
 
-export default App
+export default App;
