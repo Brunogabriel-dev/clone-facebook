@@ -8,7 +8,9 @@ const HeaderIcon = ({
   display = "default",
 }) => {
   return (
-
+    <C.Container className={section} display={display}>
+      <Icon className={active ? "active" : "" }/>
+    </C.Container>
   );
 };
 
