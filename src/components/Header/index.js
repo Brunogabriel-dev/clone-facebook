@@ -37,8 +37,12 @@ const Header = () => {
         <C.Section className="section3">
           <C.Div>
             <C.Image src={user.avatarUrl} onClick={signOut} />
-            <C.Label>{user.name.split("")[0]}</C.Label>
+            <C.Label>{user.name.split(" ")[0]}</C.Label>
           </C.Div>
+          <HeaderIcon Icon={CgMenuGridO} section="section3" />
+          <HeaderIcon Icon={SiMessenger} section="section3" />
+          <HeaderIcon Icon={MdNotifications} section="section3" />
+          <HeaderIcon Icon={FaCaretDown} section="section3" />
         </C.Section>
       </C.Context>
     </C.Container>  
