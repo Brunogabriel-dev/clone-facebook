@@ -34,7 +34,12 @@ const Header = () => {
           <HeaderIcon Icon={SiNintendogamecube} display="web" />
           <HeaderIcon Icon={FiMenu} display="mobile"  />
         </C.Section>
-        <C.Section className="section3"></C.Section>
+        <C.Section className="section3">
+          <C.Div>
+            <C.Image src={user.avatarUrl} onClick={signOut} />
+            <C.Label>{user.name.split("")[0]}</C.Label>
+          </C.Div>
+        </C.Section>
       </C.Context>
     </C.Container>  
   );

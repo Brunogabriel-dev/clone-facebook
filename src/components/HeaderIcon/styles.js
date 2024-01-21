@@ -19,7 +19,7 @@ svg {
   height: 22px;
   color: #65676b;
 
-  &.avtive {
+  &.active {
     color: #1b74e4
   }
 
