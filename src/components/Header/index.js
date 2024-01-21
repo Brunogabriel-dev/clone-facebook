@@ -8,7 +8,7 @@ import {
   MdGroups,
   MdNotifications,
 } from "react-icons/md";
-import { FaStore, FaCarretDown } from "react-icons/fa";
+import { FaStore, FaCaretDown } from "react-icons/fa";
 import { CgMenuGridO } from "react-icons/cg";
 import HeaderIcon from "../HeaderIcon";
 import { AuthContext } from "../../contexts/auth";
@@ -27,6 +27,12 @@ const Header = () => {
           </C.DivSearch>
         </C.Section>
         <C.Section className="section2">
+          <HeaderIcon Icon={MdHome} active />
+          <HeaderIcon Icon={MdOndemandVideo}  />
+          <HeaderIcon Icon={FaStore}  />
+          <HeaderIcon Icon={MdGroups}  />
+          <HeaderIcon Icon={SiNintendogamecube} display="web" />
+          <HeaderIcon Icon={FiMenu} display="mobile"  />
         </C.Section>
         <C.Section className="section3"></C.Section>
       </C.Context>
