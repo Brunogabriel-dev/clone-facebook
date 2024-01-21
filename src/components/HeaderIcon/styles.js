@@ -32,4 +32,26 @@ svg {
 @media (max-width: 825px) {
   display: ${(props) => (props.display !== "web" ? "flex" : "none")};
 }
+
+@media (max-width: 530px) {
+  padding: 0 10px;
+}
+
+&.section3 {
+  border-radius: 100%;
+  height: auto;
+  padding: 8px 8px;
+  background-color: #ebecee;
+  width: auto;
+
+  svg {
+    width: 16px;
+    height: 16px;
+    color: black;
+  }
+
+  @media (max-width: 885px) {
+    display: none;
+  }
+}
 `;
