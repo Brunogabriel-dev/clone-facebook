@@ -92,8 +92,9 @@ export const Label = styled.label`
   }
 `;
 
-export const Image = styled.img`
+export const Image = styled.img` 
   border-radius: 50%;
   margin-right: 10px;
   cursor: pointer;
+
 `;
