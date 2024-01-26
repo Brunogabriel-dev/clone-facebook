@@ -3,6 +3,7 @@ import GlobalStyles from "./styles/global";
 import { AuthContext } from "./contexts/auth";
 import Login from "./components/login";
 import Header from "./components/Header";
+import Body from "./components/Body";
 
 const App = () => {
   const { user } = useContext(AuthContext);
@@ -13,6 +14,7 @@ const App = () => {
   return (
     <>
     <Header/>
+    <Body/>
     <GlobalStyles />
     </>
   );
