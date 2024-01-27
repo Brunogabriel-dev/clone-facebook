@@ -25,4 +25,22 @@ export const Container = styled.div`
       display: none;
     }
   }
+
+  img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+  @media (max-width: 600px) {
+    pad: 10px 0;
+  }
+`;
+
+export const Label = styled.label`
+  overflow: hidden;
+  text-overflow: ellipsis;
+  @media (max-width: 600px) {
+    display: none;
+  }
 `;
