@@ -2,13 +2,14 @@ import React from "react";
 
 import * as C from "./styles";
 
-const Shortcuts = () => {
-
+const ShortcutItem = ({ Icon, Title, colorIcon, Profile }) => {
   return (
-    <C.Container>
-
+    <C.Container colorIcon={colorIcon}>
+      {Icon ? <Icon /> : <C.ImageProfile src={Profile} alt="Profile" />}
+      <C.Label>{Title}</C.Label>
     </C.Container>
+
   );
 };
 
-export default Shortcuts;
+export default ShortcutItem;
