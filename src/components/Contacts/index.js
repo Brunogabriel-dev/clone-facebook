@@ -28,6 +28,9 @@ const Contacts = () => {
           <GokebabHorizontal />
         </C.Container>
       </C.Header>
+      {itens.map((item, index ) => (
+        <ContactItem key={index} src={item.src} name={item.name}/>
+      ))}
     </C.Container>
 
   );
