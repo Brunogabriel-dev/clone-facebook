@@ -10,4 +10,19 @@ export const Container = styled.div`
   font-weight: 500;
   border-radius: 8px;
   width: 98%;
-`
+
+  &:hover {
+    background-color: #0000000d;
+  }
+
+  svg,
+  img {
+    width: 20px;
+    height: 20px;
+    color: ${(props) => (props.colorIcon ? props.colorIcon : "#1b74e4")};
+
+    @media (max-width: 550px) {
+      display: none;
+    }
+  }
+`;
