@@ -44,3 +44,5 @@ export const Label = styled.label`
     display: none;
   }
 `;
+
+export const ImageProfile = styled.img``;
