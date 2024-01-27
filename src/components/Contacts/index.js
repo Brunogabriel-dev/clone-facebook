@@ -2,7 +2,7 @@ import React from "react";
 import ContactItem from "../ContactItem";
 import * as C from "./styles";
 import { FiSearch } from "react-icons/fi";
-import { RivideoAddFill } from "react-icons/ri";
+import { RiVideoAddFill, RivideoAddFill } from "react-icons/ri";
 import { GokebabHorizontal } from "react-icons/go";
 
 import bezos from "../../images/bezos.jpg";
@@ -22,6 +22,11 @@ const Contacts = () => {
     <C.Container>
       <C.Header>
         <C.Label>Contatos</C.Label>
+        <C.Container>
+          <RiVideoAddFill />
+          <FiSearch />
+          <GokebabHorizontal />
+        </C.Container>
       </C.Header>
     </C.Container>
 
