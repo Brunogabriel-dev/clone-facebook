@@ -22,11 +22,12 @@ const Contacts = () => {
     <C.Container>
       <C.Header>
         <C.Label>Contatos</C.Label>
-        <C.Container>
+        
+          <C.HeaderIcons>
           <RiVideoAddFill />
           <FiSearch />
           <GoKebabHorizontal />
-        </C.Container>
+          </C.HeaderIcons>
       </C.Header>
       {itens.map(( item, index ) => (
         <ContactItem key={index} src={item.src} name={item.name}/>
