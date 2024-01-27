@@ -2,10 +2,13 @@ import React from "react";
 import * as C from "./styles";
 
 const Feed = () => {
+  return (
   <C.Container>
     {/* <Stories />
     <NewPost />
-    <Post />
-     */}
+    <Post /> */}
   </C.Container>
-}
+  );
+};
+
+export default Feed;
