@@ -3,12 +3,12 @@ import ContactItem from "../ContactItem";
 import * as C from "./styles";
 import { FiSearch } from "react-icons/fi";
 import { RiVideoAddFill, RivideoAddFill } from "react-icons/ri";
-import { GokebabHorizontal } from "react-icons/go";
+import { GoKebabHorizontal } from "react-icons/go";
 
 import bezos from "../../images/bezos.jpg";
-import bezos from "../../images/bill.jpg";
-import bezos from "../../images/mark.jpg";
-import bezos from "../../images/elon.jpg";
+import bill from "../../images/bill.jpg";
+import mark from "../../images/mark.jpg";
+import elon from "../../images/elon.jpg";
 
 const itens = [
   {src: bezos, name: "Jeff Bezoz"},
@@ -25,10 +25,10 @@ const Contacts = () => {
         <C.Container>
           <RiVideoAddFill />
           <FiSearch />
-          <GokebabHorizontal />
+          <GoKebabHorizontal />
         </C.Container>
       </C.Header>
-      {itens.map((item, index ) => (
+      {itens.map(( item, index ) => (
         <ContactItem key={index} src={item.src} name={item.name}/>
       ))}
     </C.Container>
