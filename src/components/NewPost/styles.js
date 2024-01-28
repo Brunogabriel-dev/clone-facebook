@@ -25,4 +25,27 @@ export const Div = styled.div`
       background-color: #0000000d;
     }
   }
+
+  svg {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+
+    color: ${(props) => (props.color ? props.color : "inherit")};
+  }
+
+  @media (max-width: 600px) {
+    display: ${(props) => (props.display === "web" ? "none" : "flex")};
+  }
+`;
+
+export const Divider = styled.div`
+margin: 10px 0;
+border-top: solid 1px lightgray;
+`;
+
+export const Image = styled.div`
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 `;
