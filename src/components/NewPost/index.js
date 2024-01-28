@@ -13,8 +13,25 @@ const NewPost = () => {
   const fileRef = useRef(null);
   const [filePost, setFilePost] = useState("");
 
+  const handlePost = async (e) => {
+    e.preventDefault();
+  }
 
 
+  const handleImage = (e) => {
+    const reader = new FileReader();
+
+    if (e.target.files[0]){
+      reader.readAsDataURL(E.target.files[0]);
+    }
+
+    reader.onload = (readerEvent) => {
+      setFilePost(readerEvent.target.result);
+    }
+  };
+
+
+  const removeFile =() => setFilePost(null);
 
   return ( 
   <C.Container>
