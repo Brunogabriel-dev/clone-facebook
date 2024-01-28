@@ -93,3 +93,11 @@ export const Label = styled.label`
   font-size: 11px;
   cursor: pointer;
 `;
+
+export const Form = styled.form`
+  width: 100%;
+`;
+
+export const Button = styled.button`
+
+`
