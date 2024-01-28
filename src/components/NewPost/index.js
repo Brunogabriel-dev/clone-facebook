@@ -19,6 +19,18 @@ const NewPost = () => {
 
   return ( 
   <C.Container>
+    <C.Div>
+    <C.Image src={user.avatarUrl} />
+    <C.Form>
+      <C.Input
+        value={desc}
+        placeholder={`No que você está pensando, ${
+          user.name.split(" ")[0]
+        }?`}
+        onChange={(e) => setDesc (e.target.value)}
+      />
+    </C.Form>
+    </C.Div>
   </C.Container>
   );
 };
