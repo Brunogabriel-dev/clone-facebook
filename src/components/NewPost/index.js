@@ -37,6 +37,18 @@ const NewPost = () => {
       </C.DivPreview>
     )}
     </C.Div>
+    <C.Divider />
+    <C.Div>
+      <C.Div className="Btns" onClick={() => fileRef.current.click()}>
+        <MdCameraAlt color="green" />
+        <C.Label>Foto/Video</C.Label>
+        <C.Input ref={fileRef} type="file" onChange={handleImage} hidden />
+      </C.Div>
+      <C.Div className="Btns" display="web">
+        <BiHappyAlt color="#ccc438" />
+        <C.Label>Sentimento/Atividade</C.Label>
+        </C.Div>
+    </C.Div>
   </C.Container>
   );
 };
