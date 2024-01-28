@@ -15,7 +15,21 @@ const NewPost = () => {
 
   const handlePost = async (e) => {
     e.preventDefault();
-  }
+
+    if (!desc) return;
+
+    await db
+     .collection("posts")
+     .add({
+      desc: desc,
+      name: user.name,
+      email: user.email,
+      image: user.avatarUrl,
+      timestamp: firebase.firestore.FieldValue.serverTimestamp();
+     })
+
+    setDesc("");
+  };
 
 
   const handleImage = (e) => {
