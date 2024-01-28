@@ -25,27 +25,55 @@ const NewPost = () => {
       name: user.name,
       email: user.email,
       image: user.avatarUrl,
-      timestamp: firebase.firestore.FieldValue.serverTimestamp();
+      timestamp: firebase.firestore.FieldValue.serverTimestamp()
      })
+     .then((doc) => {
+      if (filePost) {
+        const upload = storage
+        .ref(`posts/${doc.id}`)
+        .putString(filePost, "data_url");
+
+        removeFile();
+
+        upload.on(
+          "state_change",
+          null,
+          (err) => console.log(err),
+          () => {
+            storage
+            .ref(`posts`)
+            .child(doc.id)
+            .getDownloadURL()
+            .then((url) => {
+              db.collection("posts").doc(doc.id).set(
+                {
+                  filePost: url,
+                },
+                { merge: true }
+              );
+            });
+          }
+        );
+      }
+     });
 
     setDesc("");
   };
-
 
   const handleImage = (e) => {
     const reader = new FileReader();
 
     if (e.target.files[0]){
-      reader.readAsDataURL(E.target.files[0]);
+      reader.readAsDataURL(e.target.files[0]);
     }
 
     reader.onload = (readerEvent) => {
       setFilePost(readerEvent.target.result);
-    }
+    };
   };
 
 
-  const removeFile =() => setFilePost(null);
+  const removeFile = () => setFilePost(null);
 
   return ( 
   <C.Container>
@@ -70,6 +98,10 @@ const NewPost = () => {
     </C.Div>
     <C.Divider />
     <C.Div>
+      <C.Div className="Btns">
+          <MdVideoCall color="red" />
+          <C.Label>Vídeo ao vivo</C.Label>
+        </C.Div>
       <C.Div className="Btns" onClick={() => fileRef.current.click()}>
         <MdCameraAlt color="green" />
         <C.Label>Foto/Video</C.Label>
