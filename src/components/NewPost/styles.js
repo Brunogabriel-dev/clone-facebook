@@ -49,3 +49,23 @@ export const Image = styled.div`
   height: 40px;
   border-radius: 50%;
 `;
+
+export const DivPreview = styled.div`
+  display: flex;
+  align-items: center;
+  width: auto;
+  position: relative;
+
+  svg {
+    position: absolute;
+    display: none;
+    opacity: 0.9;
+    left: 8px;
+  }
+
+  &:hover {
+    svg {
+      display: flex;
+    }
+  }
+`;
