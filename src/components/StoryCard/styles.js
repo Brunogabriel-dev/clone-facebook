@@ -37,5 +37,26 @@ export const Image = styled.img`
   }
 `;
 
+export const ImageProfile = styled.img`
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 3px solid #1876f2;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+`;
+
+export const Label = styled.label`
+  z-index: 1;
+  color: white;
+  font-weight: 500;
+  word-break: break-word;
+  font-size: 12px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+`;
+
 
 
