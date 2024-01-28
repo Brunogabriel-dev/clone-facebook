@@ -70,7 +70,7 @@ export const DivPreview = styled.div`
   }
 `;
 
-export const ImagePreviw = styled.img`
+export const ImagePreview = styled.img`
   width: 40px;
   height: 40px;
 `;

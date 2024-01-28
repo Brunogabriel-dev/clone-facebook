@@ -7,7 +7,6 @@ import { db, storage } from "../../firebase";
 import { AuthContext } from "../../contexts/auth";
 import firebase from "firebase/compat/app";
 
-
 const NewPost = () => {
   const { user } = useContext(AuthContext);
   const [desc, setDesc] = useState("");
@@ -27,9 +26,16 @@ const NewPost = () => {
         placeholder={`No que você está pensando, ${
           user.name.split(" ")[0]
         }?`}
-        onChange={(e) => setDesc (e.target.value)}
+        onChange={(e) => setDesc(e.target.value)}
       />
+      <C.Button type="submit" onClick={handlePost} hidden />
     </C.Form>
+    {filePost && (
+      <C.DivPreview>
+        <C.ImagePreview src={filePost} />
+        <FaTrash color="red" onClick={removeFile} />
+      </C.DivPreview>
+    )}
     </C.Div>
   </C.Container>
   );
