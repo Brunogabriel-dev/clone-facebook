@@ -69,3 +69,27 @@ export const DivPreview = styled.div`
     }
   }
 `;
+
+export const ImagePreviw = styled.img`
+  width: 40px;
+  height: 40px;
+`;
+
+export const Input = styled.input`
+  padding: 8px 12px;
+  min-height: 10px;
+  height: auto;
+  border-radius: 20px;
+  background-color: #f0f2f5;
+  border: none;
+  outline: none;
+  width: 100%;
+`;
+
+export const Label = styled.label`
+  color: #65676b;
+  word-break: break-word;
+  font-weight: 600;
+  font-size: 11px;
+  cursor: pointer;
+`;
