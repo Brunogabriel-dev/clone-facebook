@@ -25,7 +25,7 @@ const NewPost = () => {
       name: user.name,
       email: user.email,
       image: user.avatarUrl,
-      timestamp: firebase.firestore.FieldValue.serverTimestamp()
+      timestamp: firebase.firestore.FieldValue.serverTimestamp(),
      })
      .then((doc) => {
       if (filePost) {

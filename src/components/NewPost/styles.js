@@ -98,6 +98,4 @@ export const Form = styled.form`
   width: 100%;
 `;
 
-export const Button = styled.button`
-
-`
+export const Button = styled.button``;
