@@ -3,12 +3,12 @@ import "firebase/compat/firestore";
 import "firebase/compat/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAV8UUNBmY143u09CE-zEeR_hydXKKpWMA",
-  authDomain: "clone-facebook-yt.firebaseapp.com",
-  projectId: "clone-facebook-yt",
-  storageBucket: "clone-facebook-yt.appspot.com",
-  messagingSenderId: "951049072300",
-  appId: "1:951049072300:web:ba89a576d7ced68ed57909"
+  apiKey: "AIzaSyB_aJwLK-z-lv7AMSLsqrzt6wFBHJzVt2w",
+  authDomain: "projeto-fb-84fae.firebaseapp.com",
+  projectId: "projeto-fb-84fae",
+  storageBucket: "projeto-fb-84fae.appspot.com",
+  messagingSenderId: "303360556108",
+  appId: "1:303360556108:web:d1e5e236b0220f3a22c8e9"
 };
 const app = firebase.initializeApp(firebaseConfig);
 
