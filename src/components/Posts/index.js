@@ -12,7 +12,17 @@ const Post = () => {
   );
   return (
     <>
-
+    {!error&&
+      realtimePosts.docs.map((post) => (
+        <Post 
+          key={post.id}
+          name={user.name}
+          desc={post.data().desc}
+          timestamp={post.data().timestamp}
+          image={user.avatarUrl}
+          filePost={post.data().filePost}
+        />
+      ))}
     </>
   );
 };
