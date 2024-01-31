@@ -58,7 +58,7 @@ const NewPost = () => {
      });
 
     setDesc("");
-  };
+  }
 
   const handleImage = (e) => {
     const reader = new FileReader();
