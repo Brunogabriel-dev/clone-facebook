@@ -4,7 +4,7 @@ import { AuthContext } from "../../contexts/auth";
 import { db } from "../../firebase";
 import Post from "../Post";
 
-const Post = () => {
+const Posts = () => {
   const { user } = useContext(AuthContext);
 
   const [realtimePosts, error] = useCollection(
@@ -27,4 +27,4 @@ const Post = () => {
   );
 };
 
-export default Post;
+export default Posts;
