@@ -5,9 +5,16 @@ import { db } from "../../firebase";
 import Post from "../Post";
 
 const Post = () => {
+  const { user } = useContext(AuthContext);
+
+  const [realtimePosts, error] = useCollection(
+    db.collection("posts").orderBy("timestamp", "desc")
+  );
   return (
     <>
 
     </>
   );
 };
+
+export default Post;
