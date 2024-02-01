@@ -69,4 +69,36 @@ export const Name = styled.span`
  export const Divider = styled.div`
    margin: 10px 0 2px;
    border-top: solid 1px lightgray;
- `
+ `;
+
+ export const footer = styled.footer`
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+ `;
+
+ export const DivButtons = styled.div`
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 1px;
+   width: 100%;
+   border-radius: 5px;
+   padding: 5px 0;
+
+   &:hover {
+    background-color: #0000000d;
+   }
+ `;
+
+ export const LabelButtons = styled.label`
+   font-size: 12px;
+   color: #65676b;
+   font-weight: 500;
+   cursor: pointer;
+   overflow: hidden;
+   text-overflow: ellipsis;
+ `;
+
+
