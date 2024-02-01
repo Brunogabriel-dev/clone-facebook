@@ -1,6 +1,6 @@
 import React from "react";
 import * as C from "./styles";
-import { GokebabHorizontal } from "react-icons/go";
+import { GoKebabHorizontal } from "react-icons/go";
 import { BiLike, BiComment } from "react-icons/bi";
 import { RiShareForwardLine } from "react-icons/ri";
 
@@ -18,13 +18,13 @@ const Post = ({ name, timestamp, image, desc, filePost }) => {
           </C.divNameTime>
         </C.SectionHeader>
         <C.SectionHeader>
-          <GokebabHorizontal color="#646464" />
+          <GoKebabHorizontal color="#646464" />
         </C.SectionHeader>
       </C.Header>
       <C.Desc>{desc}</C.Desc>
       {filePost && (
         <C.SectionImage>
-          <C.ImagePost src={filePost} alt="Imagem do post" />
+          <C.ImagePost src={filePost} />
         </C.SectionImage>
       )}
       <C.Divider />
