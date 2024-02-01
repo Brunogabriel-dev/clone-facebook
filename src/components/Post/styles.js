@@ -57,4 +57,16 @@ export const Name = styled.span`
    padding: 8px 4px;
  `;
 
- export const SectionImage = styled.section``
+ export const SectionImage = styled.section``;
+
+ export const ImagePost = styled.img`
+   max-width: 450px;
+   max-height: 300px;
+   width: 100%;
+   border-radius: 5px;
+ `;
+
+ export const Divider = styled.div`
+   margin: 10px 0 2px;
+   border-top: solid 1px lightgray;
+ `
