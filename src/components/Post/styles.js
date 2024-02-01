@@ -35,7 +35,7 @@ export const Name = styled.span`
   font-size: 13px;
 `;
 
- export const timestamp = styled.section`
+ export const Timestamp = styled.section`
    color: darkgray;
    font-weight: 600;
    font-size: 9px;

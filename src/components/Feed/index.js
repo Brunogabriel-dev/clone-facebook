@@ -1,6 +1,7 @@
 import React from "react";
 import Stories from "../Stories";
 import NewPost from "../NewPost";
+import Posts from "../Posts";
 import * as C from "./styles";
 
 const Feed = () => {
@@ -8,7 +9,7 @@ const Feed = () => {
   <C.Container>
      <Stories />
     <NewPost />
-    {/*<Post /> */}
+    <Posts /> 
   </C.Container>
   );
 };
